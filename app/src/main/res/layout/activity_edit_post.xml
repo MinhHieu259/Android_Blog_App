@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditPostActivity">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        app:title="">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@color/white"
+            android:layout_marginRight="12dp"
+            android:onClick="cancelEdit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Cập nhật bài viết"
+            android:textSize="18sp"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="6dp"
+            >
+
+            <EditText
+                android:id="@+id/txtDescEditpost"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:background="@drawable/txt_background"
+                android:padding="8dp"
+                />
+            <Button
+                android:id="@+id/btn_Editpost"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="@color/blue_main"
+                android:text="Cập nhật"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:textSize="17sp"
+                app:backgroundTint="@color/blue_main" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

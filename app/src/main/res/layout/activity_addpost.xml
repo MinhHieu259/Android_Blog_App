@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddpostActivity">
+<com.google.android.material.appbar.MaterialToolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="1dp"
+    app:title="">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:background="@color/white"
+        android:layout_marginRight="12dp"
+        android:onClick="cancelPost"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Thêm mới bài viết"
+        android:textSize="18sp"/>
+</com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="6dp"
+            >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/imgAddpost"
+            android:layout_marginBottom="18dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thay ảnh"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/blue_main"
+                android:gravity="center_horizontal"
+                android:onClick="chagePhoto"/>
+            <EditText
+                android:id="@+id/txtDescAddpost"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:background="@drawable/txt_background"
+                android:padding="8dp"
+                />
+            <Button
+                android:id="@+id/btn_Addpost"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_round"
+                android:backgroundTint="@color/blue_main"
+                android:text="Đăng bài"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:textSize="17sp"
+                app:backgroundTint="@color/blue_main" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
